@@ -1,0 +1,375 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+table {
+	border: 1px solid #3399CC;
+	width: 80%;
+	border-spacing: 0;
+}
+
+td, th {
+	padding: 5px;
+	border: 1px solid #3399CC;
+}
+
+td {
+	text-align: center;
+}
+
+.text {
+	text-align: left;
+}
+
+tr:nth-child(odd){
+	background-color: #BDDFF0;
+}
+
+body {
+    background-color: #4f6d93; /* changed color */ 
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #ffffff, #4f6d93); /* changed color */
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-color: #90C7E3;/* changed color */
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px 3px #333333;
+}
+
+header {
+	background-color: #000033;
+	color: #FFFFFF;
+	background-image: url("sunset.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+nav {
+	/*background-color: white;*/
+	font-weight: bold;
+	/*text-align: center;*/
+	padding: 20px;
+	float: left;
+	width: 160px;
+}
+
+nav a{
+	transition: color 3s ease-out;
+	text-decoration: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+}
+
+nav a:link {
+	color: #000033;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+main {
+	background-color: white;
+	margin-left: 190px;
+	padding-top: 1px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	display: block;
+}
+
+h1{
+	margin-bottom: 0;
+	font-family: Georgia, "Times New Roman", serif;
+	margin-top: 0;
+}
+
+h2{
+	color: #3399CC;
+	font-family: Georgia, "Times New Roman", serif;
+	text-shadow: 1px 1px #CCCCCC;
+}
+
+h3{
+	font-family: Georgia, "Times New Roman", serif;
+	color: black;
+}
+
+main ul{
+	list-style-image: url('marker.gif');
+}
+
+footer{
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 20px;
+	margin-left: 190px;
+	background-color: white;
+	
+}
+
+#homehero {
+	height: 300px;
+	background-image: url("coasthero.jpg");
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+
+#yurthero {
+	height: 300px;
+	background-image: url("yurthero.jpg");
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+
+#trailhero {
+	height: 300px;
+	background-image: url("trailhero.jpg");
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+
+dt{
+	color: #000033;
+}
+	
+.resort{
+	color: #5C7FA3;
+	font-weight: bold;
+}
+
+#contact{
+	font-size: 90%;
+}
+
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+label {
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 5px;
+	
+}
+
+input, textarea{
+	display: block;
+	margin-bottom: 20px;
+}
+
+/*
+#mySubmit {
+	margin-left: 125px;
+}
+*/
+
+input[type="submit"] {
+	margin-left: 130px;
+}
+
+video, embed {
+	float: right;
+	padding-left: 20px;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #eaeaea;
+    color: black;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .2;
+}
+
+
+@media only screen and (max-width: 64em) {
+	body {
+		margin: 0;
+		background-color: #FFFFFF;
+	}
+	
+	#wrapper {
+		min-width: 0;
+		width: auto;
+		box-shadow: none;
+	}
+	
+	main {
+		margin-left: 0;
+	}
+	
+	nav {
+		float: none;
+		width: auto;
+		text-align: center;
+		padding: 0.5em;
+	}
+	
+	nav li {
+		padding-top: 0.25em;
+		padding-bottom: 0.25em;
+		padding-left: 0.75em;
+		padding-right: 0.75em;
+		display: inline;
+	}
+	
+	#homehero {
+		margin-left: 0;
+		height: 200px;
+	}
+	
+	#yurthero {
+		margin-left: 0;
+		height: 200px;
+	}
+	
+	#trailhero {
+		margin-left: 0;
+		height: 200px;
+	}
+	
+	footer {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 37.5em) {
+	header {
+		padding-top: 1em;
+	}
+	
+	label {
+		float: none;
+		text-align: left;
+	}
+	
+	
+	input[type="submit"] {
+		margin-left: 0;
+	}
+	
+	main {
+		padding-bottom: 0.1em;
+		padding-top: 0.1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		font-size: 90%;
+	}
+	
+	h1 {
+		font-size: 1.5em;
+	}
+	
+	nav {
+		padding: 0;
+	}
+	
+	nav li {
+		display: block;
+		margin: 0;
+		border-bottom: 2px solid #330000;
+	}
+	
+	nav a {
+		display: block;
+	}
+	
+	#homehero {
+		display: none;
+		background-image: none;
+		height: 0;
+	}
+	
+	#yurthero {
+		display: none;
+		background-image: none;
+		height: 0;
+	}
+	
+	#trailhero {
+		display: none;
+		background-image: none;
+		height: 0;
+	}
+	
+	#mobile {
+		display: inline;
+	}
+	
+	#desktop {
+		display: none;
+	}
+}
+
